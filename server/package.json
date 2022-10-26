@@ -1,0 +1,27 @@
+{
+  "name": "shopy-server",
+  "version": "1.0.0",
+  "description": "ShopY MERN Projects",
+  "main": "index.js",
+  "author": "Mohammad Mohitul Islam",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Node",
+    "Express",
+    "SStripe",
+    "MongoDB"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
