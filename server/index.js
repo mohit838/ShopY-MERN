@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dbConnect = require("./config/db");
 const env = require("./config/envConfig");
+const userRoutes = require("./routes/users/userRoutes");
 
 // All Middlewires
 app = express();
@@ -12,6 +13,7 @@ app.use(cors());
 dbConnect();
 
 // User Router
+app.use("/api", userRoutes);
 
 // Test route
 app.get("/", (req, res) => {
