@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const env = require("");
+const dbConnect = require("./config/db");
+const env = require("./config/envConfig");
 
 // All Middlewires
 app = express();
@@ -14,7 +15,7 @@ dbConnect();
 
 // Test route
 app.get("/", (req, res) => {
-  res.json({ msg: "welcome to gRio." });
+  res.json({ msg: "welcome to ShopY." });
 });
 
 // PORT selection
