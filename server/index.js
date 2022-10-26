@@ -17,7 +17,7 @@ app.use("/api", userRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-  res.json({ msg: "welcome to ShopY." });
+  res.json({ msg: "Welcome to ShopY." });
 });
 
 // PORT selection
@@ -25,5 +25,5 @@ const port = env.PORT || 5000;
 
 // Check PORT
 app.listen(port, () => {
-  console.log(`gRio Running on port ${port}`);
+  console.log(`ShopY Running on port ${port}`);
 });
