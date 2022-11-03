@@ -1,6 +1,6 @@
 import React from "react";
-import { Hero } from "./component";
-import { heroapi, Sales } from "./data/data.js";
+import { Hero, Sales } from "./component";
+import { heroapi } from "./data/data.js";
 
 function App() {
   return (
