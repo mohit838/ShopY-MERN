@@ -2,13 +2,15 @@ import React from "react";
 import Items from "./utils/Items";
 import Title from "./utils/Title";
 
-const Sales = () => {
+const Sales = ({ endpoint: { title, items } }) => {
   return (
     <>
       <div>
-        <Title />
+        <Title title={title} />
         <div>
-          <Items />
+          {items?.map((item, i) => (
+            <Items {...item} key={i} />
+          ))}
         </div>
       </div>
     </>
