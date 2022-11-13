@@ -5,10 +5,10 @@ import { heroapi, toprateslaes, popularsales } from "./data/data.js";
 function App() {
   return (
     <>
-      <main>
+      <main className="flex flex-col gap-16 relativ">
         <Hero heroapi={heroapi} />
-        <Sales endpoint={toprateslaes} />
-        <Sales endpoint={popularsales} />
+        <Sales endpoint={popularsales} ifExists />
+        <Sales endpoint={toprateslaes} ifExists />
       </main>
     </>
   );
